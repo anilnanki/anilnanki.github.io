@@ -24,6 +24,15 @@
 				}
 			}
 
+			h3 {
+				@include vendor('transform', 'none');
+				opacity: 1;
+
+				&:before, &:after {
+					width: 100%;
+				}
+			}
+
 			.more {
 				@include vendor('transform', 'none');
 				opacity: 1;

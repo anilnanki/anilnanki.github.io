@@ -18,6 +18,18 @@
 			width: 100%;
 		}
 
+	body.is-preload #banner h3 {
+		-moz-transform: none;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		opacity: 1;
+	}
+
+		body.is-preload #banner h3:before, body.is-preload #banner h3:after {
+			width: 100%;
+		}
+
 	body.is-preload #banner .more {
 		-moz-transform: none;
 		-webkit-transform: none;

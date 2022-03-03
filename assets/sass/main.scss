@@ -1592,7 +1592,39 @@
 			@include vendor('transform', 'scale(1)');
 			@include vendor('transition', ('transform 0.5s ease', 'opacity 0.5s ease'));
 			display: inline-block;
-			font-size: 1.75em;
+			font-size: 5em;
+			opacity: 1;
+			padding: 0.35em 1em;
+			position: relative;
+			z-index: 1;
+
+			&:before, &:after {
+				@include vendor('transition', 'width 0.85s ease');
+				@include vendor('transition-delay', '0.25s');
+				background: _palette(fg-bold);
+				content: '';
+				display: block;
+				height: 2px;
+				position: absolute;
+				width: 100%;
+			}
+
+			&:before {
+				top: 0;
+				left: 0;
+			}
+
+			&:after {
+				bottom: 0;
+				right: 0;
+			}
+		}
+
+		h3 {
+			@include vendor('transform', 'scale(1)');
+			@include vendor('transition', ('transform 0.5s ease', 'opacity 0.5s ease'));
+			display: inline-block;
+			font-size: 2.5em;
 			opacity: 1;
 			padding: 0.35em 1em;
 			position: relative;
@@ -1703,6 +1735,15 @@
 	body.is-preload {
 		#banner {
 			h2 {
+				@include vendor('transform', 'scale(0.95)');
+				opacity: 0;
+
+				&:before, &:after {
+					width: 0;
+				}
+			}
+
+			h3 {
 				@include vendor('transform', 'scale(0.95)');
 				opacity: 0;
 
