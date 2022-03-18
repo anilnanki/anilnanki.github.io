@@ -1,0 +1,689 @@
+<!DOCTYPE HTML>
+<!--
+	Uses base theme from Spectral by HTML5 UP
+	Find it here : html5up.net | @ajlkn
+	This can be recreated for free for personal and commercial use under the CCA 3.0 license
+	(ankitawedsanil.com/license)
+-->
+<html>
+	<head>
+		<title>Ankita & Anil</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../index.html">Ankita & Anil</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="../index.html">Home</a></li>
+											<li><a href="the_couple.html">The Couple</a></li>
+											<li><a href="schedule.html">Schedule</a></li>
+											<li><a href="encomium.html">Encomium</a></li>
+											<li><a href="photos.html">Photos</a></li>
+											<li><a href="travel_and_accommodation.html">Travel & Accommodations</a></li>
+											<li><a href="parking_and_transportation.html">Parking & Transportation</a></li>
+											<li><a href="registry.html">Registry</a></li>
+											<li><a href="faqs.html">FAQs</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>The Couple</h2>
+							<h3>Take the Quiz !</h3>
+                            <p>
+                                We could tell you our story ... or we could see how well you know it. Find some inside secrets and facts you probably have never heard about Ankita and Anil. The story of how we met, the engagement and why we decided to get married !
+                            </p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+								<style>
+									.question-container{
+										max-width:1024px;
+										background:#d5d5d5;
+										margin:0 auto;
+										border-radius:8px;width:100%;
+										font-size:20px
+									}
+
+									.question-container .inner-container{
+										padding:30px
+									}
+
+									.question-container .question_number{
+										color:#000;
+										text-align:center
+									}
+
+									.question-container .question_name{
+										margin-top:30px
+									}
+
+									.question-container .options{
+										margin-top:30px
+									}
+
+									.question-container .option{
+										margin-bottom:3px;
+										background:#FFF;
+										padding:10px;
+										border-radius:3px
+									}
+
+									.question-container .enabled .option{
+										cursor:pointer
+									}
+
+									.question-container .enabled .option:hover{
+										background:#25a186;
+										color:#FFF
+									}
+
+									.question-container .disabled .correct .right{
+										color:green;
+										animation:correctAnim 0.5s 0s 2 both;
+										animation-direction:alternate;
+										transform:scale(2)
+									}
+
+									.question-container .option span{
+										display:none;
+										float:right
+									}
+
+									.question-container .disabled .correct .right,.question-container .disabled .incorrect .wrong{
+										display:inline-block
+									}
+
+									@keyframes correctAnim{
+										0%{
+											color:green;
+											transform:scale(2)
+										}
+										100%{
+											color:green;
+											transform:scale(5)
+										}
+									}
+
+									.question-container .disabled .incorrect .wrong{
+										color:red;transform:scale(1.5)
+									}
+
+									.question-container input[type='button']{
+										background:#25a186;
+										color:#FFF;
+										cursor:pointer;
+										padding:10px 40px;
+										margin:20px;
+										border:0;
+										font-size:20px;
+										-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);
+										-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);
+										box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);transform:scale(1.1)
+									}
+
+									.question-container input[type='button']:hover{
+										-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);
+										-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);
+										box-shadow:0 0 0 -7px rgba(18,1,18,0.61);transform:scale(1)
+									}
+
+									.question-container .next input[type='button']{
+										margin-top:30px
+									}
+
+									.question-container .enabled .next input[type='button']{
+										background:gray;
+										color:#d5d5d5;
+										-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);
+										-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);
+										box-shadow:0 0 0 -7px rgba(18,1,18,0.61);transform:scale(1);cursor:default
+									}
+
+									.question-container .disabled .next input[type='button']{
+										background:#25a186;
+										color:#FFF;
+										cursor:pointer;
+										-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);
+										-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);
+										box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);
+										animation:enableBtnAnim 0.5s 0s infinite both;
+										animation-direction:alternate
+									}
+
+									@keyframes enableBtnAnim{
+										0%{
+											-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);
+											-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);
+											box-shadow:0 0 0 -7px rgba(18,1,18,0.61);
+											transform:scale(1)
+										}
+
+										100%{
+											-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);
+											-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);transform:scale(1.1)
+										}
+									}
+
+									.question-container .disabled .next input[type='button']:hover{
+										-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);
+										-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);
+										box-shadow:0 0 0 -7px rgba(18,1,18,0.61);
+										animation:hoverBtnAnim 0.5s 0s 1 both;
+										animation-direction:alternate
+									}
+
+									@keyframes hoverBtnAnim{
+										0%{
+											-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);
+											box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);
+											transform:scale(1.1)
+										}
+
+										100%{
+											-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);
+											-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);
+											box-shadow:0 0 0 -7px rgba(18,1,18,0.61);transform:scale(1)
+										}
+									}
+
+									.question-container .showAll{
+										margin-bottom:40px;border:1px solid gray;
+										padding:25px;
+										border-radius:4px;
+										display:block!important
+									}
+
+									@media only screen and (max-width : 600px){
+										.question-container .next input[type='button']{
+											width:100%;
+											margin:0;
+											margin-top:20px
+										}
+									}
+									</style>
+										<div id='quiz_container'></div>
+											<script>
+
+											var _0x30e8=['INPUT','setAttribute','inner-container','createElement',
+											'\x20correct','90%','style','question\x20disabled\x20showAll',
+											'option\x20option','call','center','getElementById','question\x20disabled',
+											'questionContainer','nextBtn','\x20of\x20','srcElement','</div><br/><div>',
+											'className','question\x20enabled','<div><div><b>Result:</b></div><br/><div>',
+											'This\x20Quiz\x20was\x20created\x20using\x20the\x20resources\x20<a\x20target=\x27_blank\x27\x20href=\x27https://www.htmlcodegenerator-tools.com/2019/10/html-javascript-quiz-generator-score-timer.html\x27>and\x20help\x20 from here</a>',
+											'object','remove','parentElement','Show\x20Asnwers','indexOf','div',
+											'showAnswersBtn','hasOwnProperty','lastChild','right',
+											'getElementsByClassName','question_name','score','enabled','Quiz',
+											'<span\x20class=\x27right\x27>&#10004;</span><span\x20class=\x27wrong\x27>X</span>',
+											'showResetBtn','next',
+											'quiz-report','options','myLink','currentQuestion','value','question',
+											'bind','Try\x20Again','button','event','option','appendChild','target',
+											'elementId','none','textAlign','addEventListener','quizQuestions',
+											'innerHTML','block','innerContainer','question_number','length','display',
+											'type','click'];
+
+											(function(_0x286d19,_0x30e82a){
+												var _0x9e26e6=function(_0x15fa70){
+													while(--_0x15fa70){
+														_0x286d19['push'](_0x286d19['shift']());
+													}
+												};
+
+												_0x9e26e6(++_0x30e82a);
+											}
+
+											(_0x30e8,0x10d));
+
+											var _0x9e26=function(_0x286d19,_0x30e82a){
+												_0x286d19=_0x286d19-0x0;
+												var _0x9e26e6=_0x30e8[_0x286d19];
+												return _0x9e26e6;
+											};
+
+											(function(){
+												function _0x199599(){
+													var _0x3b4b83=document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);
+													this['questionContainer']=document['createElement'](_0x9e26('0x16')),
+													this['questionContainer'][_0x9e26('0xd')]='question-container',
+													this[_0x9e26('0x37')]=document[_0x9e26('0x40')](_0x9e26('0x16')),
+													this[_0x9e26('0x37')][_0x9e26('0xd')]=_0x9e26('0x3f'),_0x3b4b83['appendChild'](this[_0x9e26('0x8')]),
+													this[_0x9e26('0x8')][_0x9e26('0x2e')](this[_0x9e26('0x37')]);
+
+													for(var _0x535939=0x0;_0x535939<this[_0x9e26('0x24')][_0x9e26('0x34')]['length'];_0x535939++){
+														var _0x3dd27d=document['createElement']('div');_0x3dd27d[_0x9e26('0xd')]=_0x9e26('0xe'),
+														this[_0x9e26('0x37')][_0x9e26('0x2e')](_0x3dd27d),_0x535939!=this[_0x9e26('0x26')]&&(_0x3dd27d['style'][_0x9e26('0x3a')]=_0x9e26('0x31'));
+														var _0x81142=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x81142[_0x9e26('0xd')]=_0x9e26('0x38'),_0x81142[_0x9e26('0x35')]=_0x535939+0x1+'/'+this['options'][_0x9e26('0x34')][_0x9e26('0x39')],_0x3dd27d[_0x9e26('0x2e')](_0x81142);
+														var _0x13c728=document[_0x9e26('0x40')](_0x9e26('0x16'));
+														_0x13c728['className']=_0x9e26('0x1c'),_0x13c728['innerHTML']=this[_0x9e26('0x24')][_0x9e26('0x34')][_0x535939][_0x9e26('0x28')],_0x3dd27d[_0x9e26('0x2e')](_0x13c728);
+														var _0x4722a4=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4722a4[_0x9e26('0xd')]=_0x9e26('0x24'),_0x3dd27d[_0x9e26('0x2e')](_0x4722a4);
+
+														for(var _0x28c409=0x0;_0x28c409<this['options']['quizQuestions'][_0x535939]['options'][_0x9e26('0x39')];_0x28c409++){
+															var _0x4cca80=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4cca80[_0x9e26('0xd')]='option\x20option'+_0x535939+_0x28c409,_0x4cca80[_0x9e26('0x35')]=this[_0x9e26('0x24')][_0x9e26('0x34')][_0x535939][_0x9e26('0x24')][_0x28c409][_0x9e26('0x27')]+_0x9e26('0x20'),_0x4722a4[_0x9e26('0x2e')](_0x4cca80),_0x4cca80[_0x9e26('0x33')]('click',_0x14c511['bind'](this,_0x535939,_0x28c409));
+														}
+
+														var _0x4ca056=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4ca056[_0x9e26('0xd')]=_0x9e26('0x22');
+														var _0x4cc6a7=document[_0x9e26('0x40')]('INPUT');
+														_0x4cc6a7[_0x9e26('0x3e')](_0x9e26('0x3b'),_0x9e26('0x2b')),_0x4cc6a7[_0x9e26('0x3e')](_0x9e26('0x27'),'Next'),_0x4cc6a7[_0x9e26('0xd')]=_0x9e26('0x9'),_0x4ca056[_0x9e26('0x2e')](_0x4cc6a7),_0x3dd27d[_0x9e26('0x2e')](_0x4ca056),_0x4cc6a7[_0x9e26('0x33')](_0x9e26('0x3c'),_0x55841d[_0x9e26('0x29')](this));
+													}
+													var _0x4b290c=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4b290c['id']=_0x9e26('0x23'),_0x4b290c['style'][_0x9e26('0x32')]=_0x9e26('0x5'),
+													this[_0x9e26('0x37')][_0x9e26('0x2e')](_0x4b290c),function(){
+														var _0x4244cc=document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);this[_0x9e26('0x25')]=document[_0x9e26('0x40')](_0x9e26('0x16')),
+														this[_0x9e26('0x25')]['style']['fontSize']=_0x9e26('0x0'),
+														this[_0x9e26('0x25')][_0x9e26('0x1')][_0x9e26('0x32')]=_0x9e26('0x5'),
+														this[_0x9e26('0x25')][_0x9e26('0x35')]=_0x9e26('0x10'),_0x4244cc[_0x9e26('0x2e')](this[_0x9e26('0x25')]);
+													}
+													[_0x9e26('0x4')](this),function(){
+														var _0x22373e=document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);_0x22373e[_0x9e26('0x19')][_0x9e26('0x35')][_0x9e26('0x39')]<=0xbe&&0xb4<=_0x22373e[_0x9e26('0x19')][_0x9e26('0x35')][_0x9e26('0x39')]||_0x22373e[_0x9e26('0x12')]();
+													}
+													[_0x9e26('0x4')](this);
+												}
+
+												function _0x14c511(_0x364928,_0x1925ff){
+													var _0x1c0550=_0x1c0550||window[_0x9e26('0x2c')];if(-0x1!=(_0x1c0550[_0x9e26('0x2f')]||_0x1c0550['srcElement'])[_0x9e26('0x13')][_0x9e26('0x13')][_0x9e26('0xd')][_0x9e26('0x15')](_0x9e26('0x1e'))){
+														for(var _0x13e903=document['getElementsByClassName'](_0x9e26('0x28')),_0x17a407=0x0;
+														_0x17a407<_0x13e903[_0x9e26('0x39')];_0x17a407++)_0x17a407==_0x364928&&(_0x13e903[_0x364928][_0x9e26('0xd')]=_0x9e26('0x7'));
+														for(_0x17a407=0x0;_0x17a407<this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928]['options'][_0x9e26('0x39')];
+														_0x17a407++){
+															if(_0x17a407==_0x1925ff)if(this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928]['options'][_0x1925ff][_0x9e26('0x1a')])(_0x13e903=document['getElementsByClassName']('option'+_0x364928+_0x1925ff))[0x0][_0x9e26('0xd')]=_0x9e26('0x3')+_0x364928+_0x1925ff+_0x9e26('0x41'),
+															this[_0x9e26('0x1d')]++;
+
+															else(_0x13e903=document[_0x9e26('0x1b')](_0x9e26('0x2d')+_0x364928+_0x1925ff))[0x0][_0x9e26('0xd')]=_0x9e26('0x3')+_0x364928+_0x1925ff+'\x20incorrect';
+
+															else if(this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928][_0x9e26('0x24')][_0x17a407][_0x9e26('0x1a')])(_0x13e903=document[_0x9e26('0x1b')](_0x9e26('0x2d')+_0x364928+_0x17a407))[0x0][_0x9e26('0xd')]=_0x9e26('0x3')+_0x364928+_0x17a407+_0x9e26('0x41');
+														}
+													}
+												}
+
+												function _0x55841d(){
+													var _0x44e42a=_0x44e42a||window[_0x9e26('0x2c')];
+													if(-0x1!=(_0x44e42a[_0x9e26('0x2f')]||_0x44e42a[_0x9e26('0xb')])['parentElement'][_0x9e26('0x13')]['className']['indexOf']('disabled')){
+														this[_0x9e26('0x26')]++;
+														for(var _0x4023e4=document['getElementsByClassName'](_0x9e26('0x28')),_0x3c6c2a=0x0;_0x3c6c2a<_0x4023e4[_0x9e26('0x39')];_0x3c6c2a++)_0x3c6c2a==this['currentQuestion']?_0x4023e4[_0x3c6c2a][_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x36'):_0x4023e4[_0x3c6c2a][_0x9e26('0x1')][_0x9e26('0x3a')]='none';this[_0x9e26('0x24')][_0x9e26('0x34')][_0x9e26('0x39')]==this[_0x9e26('0x26')]&&function(){
+															var _0x522412=document[_0x9e26('0x6')](_0x9e26('0x23'));
+
+														if(_0x522412[_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x36'),_0x522412[_0x9e26('0x35')]=_0x9e26('0xf')+this[_0x9e26('0x1d')]+_0x9e26('0xa')+this['options'][_0x9e26('0x34')][_0x9e26('0x39')]+_0x9e26('0xc')+parseInt(this[_0x9e26('0x1d')]/this['options'][_0x9e26('0x34')][_0x9e26('0x39')]*0x64)+'%</div></div>',
+														this[_0x9e26('0x24')][_0x9e26('0x17')]){
+															var _0x2ea20c=document[_0x9e26('0x40')]('INPUT');
+															_0x2ea20c[_0x9e26('0x3e')](_0x9e26('0x3b'),_0x9e26('0x2b')),_0x2ea20c[_0x9e26('0x3e')]('value',_0x9e26('0x14')),_0x522412[_0x9e26('0x2e')](_0x2ea20c),_0x2ea20c[_0x9e26('0x33')](_0x9e26('0x3c'),
+															function(){
+																for(var _0x3afb67=document[_0x9e26('0x1b')]('question'),_0xbc6abe=0x0;_0xbc6abe<_0x3afb67[_0x9e26('0x39')];
+																_0xbc6abe++)_0x3afb67[_0xbc6abe][_0x9e26('0xd')]=_0x9e26('0x2');for(_0x3afb67=document[_0x9e26('0x1b')](_0x9e26('0x22')),_0xbc6abe=0x0;
+																_0xbc6abe<_0x3afb67[_0x9e26('0x39')];_0xbc6abe++)_0x3afb67[_0xbc6abe][_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x31');}['bind'](this));
+															}
+															if(this[_0x9e26('0x24')][_0x9e26('0x21')]){
+																var _0x2fbad3=document[_0x9e26('0x40')](_0x9e26('0x3d'));
+																_0x2fbad3[_0x9e26('0x3e')](_0x9e26('0x3b'),_0x9e26('0x2b')),_0x2fbad3[_0x9e26('0x3e')](_0x9e26('0x27'),_0x9e26('0x2a')),_0x522412['appendChild'](_0x2fbad3),_0x2fbad3[_0x9e26('0x33')]('click',
+																function(){
+																	for(var _0x3d8c0a=document[_0x9e26('0x1b')](_0x9e26('0x28')),_0x345f4a=0x0;_0x345f4a<_0x3d8c0a['length'];_0x345f4a++)_0x3d8c0a[_0x345f4a][_0x9e26('0xd')]=_0x9e26('0xe'),_0x3d8c0a[_0x345f4a][_0x9e26('0x1')][_0x9e26('0x3a')]='none',0x0==_0x345f4a&&(_0x3d8c0a[_0x345f4a][_0x9e26('0x1')]['display']=_0x9e26('0x36'));
+																	for(_0x3d8c0a=document[_0x9e26('0x1b')](_0x9e26('0x22')),_0x345f4a=0x0;
+																	_0x345f4a<_0x3d8c0a[_0x9e26('0x39')];_0x345f4a++)_0x3d8c0a[_0x345f4a][_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x36');this[_0x9e26('0x26')]=0x0,
+																	this[_0x9e26('0x1d')]=0x0,document[_0x9e26('0x6')](_0x9e26('0x23'))[_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x31'),document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')])[_0x9e26('0x35')]='',_0x199599[_0x9e26('0x4')](this);
+																}
+																[_0x9e26('0x29')](this));
+															}
+														}
+
+													[_0x9e26('0x4')](this);
+													}
+												}
+
+												this[_0x9e26('0x1f')]=function(){
+													this['score']=0x0;arguments[this['currentQuestion']=0x0]&&_0x9e26('0x11')==typeof arguments[0x0]&&(this[_0x9e26('0x24')]=function(_0x427faf,_0x1c6308){
+														var _0x3daaf6;for(_0x3daaf6 in _0x1c6308)_0x1c6308[_0x9e26('0x18')](_0x3daaf6)&&(_0x427faf[_0x3daaf6]=_0x1c6308[_0x3daaf6]);
+													return _0x427faf;
+												}
+
+												({'quizQuestions':{},'elementId':'','showAnswersBtn':!0x0,'showTimer':!0x0},arguments[0x0])),_0x199599[_0x9e26('0x4')](this);
+												};
+											}
+											()
+											);
+
+										var data = [
+											{
+												"type":"radio","question":"What was their favourite thing to do while hanging out as friends ?","explanation":"",
+
+												"options":[
+													{
+														"value":"Go to latest kannada/hindi movies","right":false,"selected":false
+													},
+													{
+														"value":"Shop and eat in banashankari BDA complex","right":false,"selected":false
+													},
+													{
+														"value":"Find and eat dosa in best or new resturants/eateries in bangalore","right":true,"selected":false
+													},
+													{"value":"Hang out in 4th block Jayanagar","right":false,"selected":false}
+												],"selected":"2"
+											},
+											{
+												"type":"radio","question":"How long have they been together ?","explanation":"",
+												"options":[
+													{
+														"value":"4 years","right":false,"selected":false
+													},
+													{
+														"value":"5 years","right":true,"selected":false
+													},
+													{
+														"value":"6 years","right":false,"selected":false
+													},
+													{
+														"value":"An eternity. Seriously, what took them so long ?","right":false,"selected":false
+													}
+												],"selected":"1"
+											},
+											{
+												"type":"radio","question":"Which was their first concert together ?","explanation":"",
+												"options":[
+													{
+														"value":"Maroon 5","right":true,"selected":false
+													},
+													{
+														"value":"Arjith Singh","right":false,"selected":false
+													},
+													{
+														"value":"Linkin Park","right":false,"selected":false
+													},
+													{
+														"value":"A.R. Rahman","right":false,"selected":false
+													}
+												],"selected":"0"
+											},
+											{
+												"type":"radio","question":"Whats the one thing Anil loves but Ankita wishes didn't exist ?","explanation":"",
+												"options":[
+													{
+														"value":"Adventure sports","right":false,"selected":false
+													},
+													{
+														"value":"Camera tripods","right":false,"selected":false
+													},
+													{
+														"value":"Playstation","right":false,"selected":false
+													},
+													{
+														"value":"Amusement parks","right":true,"selected":false
+													}
+												],"selected":"3"
+											},
+											{
+												"type":"radio","question":"Over the years, Ankita and Anil have had a lot of adventures together. What have they NOT done together?","explanation":"",
+												"options":[
+													{
+														"value":"Riding ATV's through tropical rain forests","right":false,"selected":false
+													},
+													{
+														"value":"Fresh water river rafting in Colorado","right":true,"selected":false
+													},
+													{
+														"value":"Scaling Grand Teton mountains","right":false,"selected":false
+													},
+													{
+														"value":"Jet Ski in the Carribian","right":false,"selected":false
+													}
+												],"selected":"1"
+											},
+											{
+												"type":"radio","question":"Who was Ankita's favorite celebrity crush growing up ? P.S. she still secretly loves him !","explanation":"","options":[
+													{
+														"value":"Aamir Khan","right":false,"selected":false
+													},
+													{
+														"value":"Hrithik Roshan","right":true,"selected":false
+													},
+													{
+														"value":"Shahid Kapoor","right":false,"selected":false
+													},
+													{
+														"value":"Shahrukh Khan","right":false,"selected":false
+													}
+												],"selected":"1"
+											},
+											{
+												"type":"radio","question":"When does Anil's senses become non-existent the most ?","explanation":"",
+												"options":[
+													{
+														"value":"While playing on his Playstation","right":false,"selected":false
+													},
+													{
+														"value":"Watching Formula-1","right":false,"selected":false
+													},
+													{
+														"value":"Watching Manchester United","right":true,"selected":false
+													},
+													{
+														"value":"While texting his close friends","right":false,"selected":false
+													}
+												],"selected":"2"
+											},
+											{
+												"type":"radio","question":"If Ankita could win a lifetime supply of anything, what would it be ?","explanation":"",
+												"options":[
+													{
+														"value":"Hot potato chips","right":false,"selected":false
+													},
+													{
+														"value":"Mango milkshake","right":false,"selected":false
+													},
+													{
+														"value":"Orange juice","right":false,"selected":false
+													},
+													{
+														"value":"Coffee","right":true,"selected":false
+													}
+												],"selected":"3"
+											},
+											{
+												"type":"radio","question":"Where did Anil spend most of his time during summer holidays ?","explanation":"",
+												"options":[
+													{
+														"value":"Mysore, in his grandpaents home.","right":true,"selected":false
+													},
+													{
+														"value":"Bangalore, with his best friends in 8th main","right":false,"selected":false
+													},
+													{
+														"value":"Shivamogga, learning to swim in Country Club","right":false,"selected":false
+													},
+													{
+														"value":"Mysore, in long summer camps","right":false,"selected":false
+													}
+												],"selected":null
+											},
+											{
+												"type":"radio","question":"If they no longer had to work to live comfortably, what would Ankita and Anil do with thier life ?","explanation":"",
+												"options":[
+													{
+														"value":"Travel the globe","right":false,"selected":false
+													},
+													{
+														"value":"Rescue animals","right":true,"selected":false
+													},
+													{
+														"value":"Help the less privilaged","right":false,"selected":false
+													},
+													{
+														"value":"Become Master Gardeners","right":false,"selected":false
+													}
+												],"selected":"1"
+											},
+											{
+												"type":"radio","question":"What does Ankita enjoy the most ?","explanation":"",
+												"options":[
+													{
+														"value":"Hosting and cooking for her friends and having a nice day filled with conversations","right":true,"selected":false
+													},
+													{
+														"value":"Spend all day texting and calling her best friends","right":false,"selected":false
+													},
+													{
+														"value":"Sleep until she no longer knows its day or night","right":false,"selected":false
+													},
+													{
+														"value":"Design the interiors of our current and future home on a mood board","right":false,"selected":false
+													}
+												],"selected":"0"
+											},
+											{
+												"type":"radio","question":"What is the one thing Anil cannot live without ?","explanation":"",
+												"options":[
+													{
+														"value":"Music","right":true,"selected":false
+													},
+													{
+														"value":"Gadgets","right":false,"selected":false
+													},
+													{
+														"value":"Football cleats","right":false,"selected":false
+													},
+													{
+														"value":"Cars","right":false,"selected":false
+													}
+												],"selected":null
+											}
+										];
+
+										var quiz = new Quiz({
+													quizQuestions: data,elementId: 'quiz_container',showAnswersBtn:true,showResetBtn:true
+												});
+
+										</script>
+
+								<br />
+								<br />
+								<section>
+									<h2>The Bride and Groom</h2>
+									<hr />
+									<h3>Ankita</h3>
+									<p><span class="image left"><img src="../images/travel_and_accomadation.jpg" alt="" /></span>
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+									</p>
+									<p><span class="image right"><img src="../images/travel_and_accomadation.jpg" alt="" /></span>
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+									</p>
+									<br />
+									<br />
+									<h3>Anil</h3>
+									<p><span class="image left"><img src="../images/travel_and_accomadation.jpg" alt="" /></span>
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+									</p>
+									<p><span class="image right"><img src="../images/travel_and_accomadation.jpg" alt="" /></span>
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+										Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon ! Coming Soon !
+									</p>
+								</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
