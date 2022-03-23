@@ -3875,7 +3875,7 @@ input, select, textarea {
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-attachment: fixed;
-		background-position: center center;
+		background-position: left;
 		background-repeat: no-repeat;
 		background-size: cover;
 		text-align: center;
@@ -4025,7 +4025,7 @@ input, select, textarea {
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-attachment: fixed;
-		background-position: center center;
+		background-position: left;
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding-top: 0;
@@ -4045,7 +4045,7 @@ input, select, textarea {
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-position: center center;
+		background-position: left;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
