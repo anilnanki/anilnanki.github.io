@@ -1,18 +1,18 @@
 const countdown = () => {
     // Specify the date and time we are counting down to.
-    const countDate = new Date("May 6, 2022 00:00:00").getTime();
+    const countDate = new Date("May 6, 2022 09:15:00").getTime();
     const now = new Date().getTime();
-    const remainingTime = countDate - now;
+    const timeFrom = now - countDate;
 
     const seconds = 1000;
     const minutes = seconds * 60;
     const hours = minutes * 60;
     const days = hours * 24;
 
-    const textdays = Math.floor(remainingTime / days);
-    const texthours = Math.floor((remainingTime % days) / hours);
-    const textminutes = Math.floor((remainingTime % hours) / minutes);
-    const textseconds = Math.floor((remainingTime % minutes) / seconds);
+    const textdays = Math.floor(timeFrom / days);
+    const texthours = Math.floor((timeFrom % days) / hours);
+    const textminutes = Math.floor((timeFrom % hours) / minutes);
+    const textseconds = Math.floor((timeFrom % minutes) / seconds);
 
     document.querySelector(".days").innerText = textdays > 0 ? textdays : 0;
     document.querySelector(".hours").innerText = texthours > 0 ? texthours : 0;
